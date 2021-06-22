@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="8" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-06-22T05:09:19Z" name="Calculator" finished-at="2021-06-22T05:09:19Z" duration-ms="27">
+    <groups>
+      <group name="Trigonometric function">
+        <method signature="AppTest.testCosValue()[pri:0, instance:com.testngProject.calculator.AppTest@7bb58ca3]" name="testCosValue" class="com.testngProject.calculator.AppTest"/>
+        <method signature="AppTest.testSinValue()[pri:0, instance:com.testngProject.calculator.AppTest@7bb58ca3]" name="testSinValue" class="com.testngProject.calculator.AppTest"/>
+        <method signature="AppTest.testTanhValue()[pri:0, instance:com.testngProject.calculator.AppTest@7bb58ca3]" name="testTanhValue" class="com.testngProject.calculator.AppTest"/>
+      </group> <!-- Trigonometric function -->
+    </groups>
+    <test started-at="2021-06-22T05:09:19Z" name="testCalculator" finished-at="2021-06-22T05:09:19Z" duration-ms="27">
+      <class name="com.testngProject.calculator.AppTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testngProject.calculator.AppTest@7bb58ca3]" started-at="2021-06-22T05:09:19Z" name="setUp" finished-at="2021-06-22T05:09:19Z" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCosValue()[pri:0, instance:com.testngProject.calculator.AppTest@7bb58ca3]" started-at="2021-06-22T05:09:19Z" name="testCosValue" finished-at="2021-06-22T05:09:19Z" duration-ms="3" status="FAIL">
+          <exception class="junit.framework.AssertionFailedError">
+            <message>
+              <![CDATA[expected:<0.15425144988758405> but was:<-0.9880316240928618>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError: expected:<0.15425144988758405> but was:<-0.9880316240928618>
+at junit.framework.Assert.fail(Assert.java:47)
+at junit.framework.Assert.failNotEquals(Assert.java:282)
+at junit.framework.Assert.assertEquals(Assert.java:101)
+at junit.framework.Assert.assertEquals(Assert.java:108)
+at com.testngProject.calculator.AppTest.testCosValue(AppTest.java:108)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.testngProject.calculator.TestNgMain.main(TestNgMain.java:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCosValue -->
+        <test-method signature="testDivValid()[pri:0, instance:com.testngProject.calculator.AppTest@7bb58ca3]" started-at="2021-06-22T05:09:19Z" name="testDivValid" finished-at="2021-06-22T05:09:19Z" duration-ms="0" status="PASS">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[Attempt to divide by zero]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: Attempt to divide by zero
+at com.epam.tat.module4.Calculator.div(Calculator.java:34)
+at com.testngProject.calculator.AppTest.testDivValid(AppTest.java:72)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.testngProject.calculator.TestNgMain.main(TestNgMain.java:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivValid -->
+        <test-method signature="testMulValid()[pri:0, instance:com.testngProject.calculator.AppTest@7bb58ca3]" started-at="2021-06-22T05:09:19Z" name="testMulValid" finished-at="2021-06-22T05:09:19Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMulValid -->
+        <test-method signature="testNumisPositive()[pri:0, instance:com.testngProject.calculator.AppTest@7bb58ca3]" started-at="2021-06-22T05:09:19Z" name="testNumisPositive" finished-at="2021-06-22T05:09:19Z" duration-ms="0" status="FAIL">
+          <exception class="junit.framework.AssertionFailedError">
+            <message>
+              <![CDATA[expected:<false> but was:<true>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError: expected:<false> but was:<true>
+at junit.framework.Assert.fail(Assert.java:47)
+at junit.framework.Assert.failNotEquals(Assert.java:282)
+at junit.framework.Assert.assertEquals(Assert.java:64)
+at junit.framework.Assert.assertEquals(Assert.java:149)
+at junit.framework.Assert.assertEquals(Assert.java:155)
+at com.testngProject.calculator.AppTest.testNumisPositive(AppTest.java:119)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.testngProject.calculator.TestNgMain.main(TestNgMain.java:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNumisPositive -->
+        <test-method signature="testSuValid()[pri:0, instance:com.testngProject.calculator.AppTest@7bb58ca3]" started-at="2021-06-22T05:09:19Z" name="testSuValid" finished-at="2021-06-22T05:09:19Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuValid -->
+        <test-method signature="testSinValue()[pri:0, instance:com.testngProject.calculator.AppTest@7bb58ca3]" started-at="2021-06-22T05:09:19Z" name="testSinValue" finished-at="2021-06-22T05:09:19Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSinValue -->
+        <test-method signature="testSqrtValid()[pri:0, instance:com.testngProject.calculator.AppTest@7bb58ca3]" started-at="2021-06-22T05:09:19Z" name="testSqrtValid" finished-at="2021-06-22T05:09:19Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSqrtValid -->
+        <test-method signature="testSubValid(double, double, double)[pri:0, instance:com.testngProject.calculator.AppTest@7bb58ca3]" started-at="2021-06-22T05:09:19Z" name="testSubValid" data-provider="data-provider" finished-at="2021-06-22T05:09:19Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubValid -->
+        <test-method signature="testSubValid(double, double, double)[pri:0, instance:com.testngProject.calculator.AppTest@7bb58ca3]" started-at="2021-06-22T05:09:19Z" name="testSubValid" data-provider="data-provider" finished-at="2021-06-22T05:09:19Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubValid -->
+        <test-method signature="testSumValid()[pri:0, instance:com.testngProject.calculator.AppTest@7bb58ca3]" started-at="2021-06-22T05:09:19Z" name="testSumValid" finished-at="2021-06-22T05:09:19Z" duration-ms="0" status="FAIL">
+          <exception class="junit.framework.AssertionFailedError">
+            <message>
+              <![CDATA[expected:<5.625> but was:<5.0>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError: expected:<5.625> but was:<5.0>
+at junit.framework.Assert.fail(Assert.java:47)
+at junit.framework.Assert.failNotEquals(Assert.java:282)
+at junit.framework.Assert.assertEquals(Assert.java:101)
+at junit.framework.Assert.assertEquals(Assert.java:108)
+at com.testngProject.calculator.AppTest.testSumValid(AppTest.java:128)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.testngProject.calculator.TestNgMain.main(TestNgMain.java:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSumValid -->
+        <test-method signature="testTanhValue()[pri:0, instance:com.testngProject.calculator.AppTest@7bb58ca3]" started-at="2021-06-22T05:09:19Z" name="testTanhValue" finished-at="2021-06-22T05:09:19Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTanhValue -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testngProject.calculator.AppTest@7bb58ca3]" started-at="2021-06-22T05:09:19Z" name="tearDown" finished-at="2021-06-22T05:09:19Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testngProject.calculator.AppTest -->
+    </test> <!-- testCalculator -->
+  </suite> <!-- Calculator -->
+</testng-results>

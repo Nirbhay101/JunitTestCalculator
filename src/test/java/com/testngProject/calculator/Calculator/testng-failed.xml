@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Calculator]">
+  <test thread-count="5" name="testCalculator(failed)">
+    <classes>
+      <class name="com.testngProject.calculator.AppTest">
+        <methods>
+          <include name="testCosValue"/>
+          <include name="tearDown"/>
+          <include name="testNumisPositive"/>
+          <include name="setUp"/>
+          <include name="testSumValid"/>
+        </methods>
+      </class> <!-- com.testngProject.calculator.AppTest -->
+    </classes>
+  </test> <!-- testCalculator(failed) -->
+</suite> <!-- Failed suite [Calculator] -->
